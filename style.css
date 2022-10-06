@@ -1,0 +1,151 @@
+
+:root{
+    /* ### Primary */
+--softRed: hsl(10, 79%, 65%);
+--softBlue: hsl(186, 34%, 60%);
+
+/* ### Neutral */
+--Brown: hsl(25, 47%, 15%);
+--mediumBrown: hsl(28, 10%, 53%);
+--cream: hsl(27, 66%, 92%);
+--veryPaleOrange: hsl(33, 100%, 98%);
+--white: #fff;
+
+--fontPrimary:'DM Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--fontPrimary);
+    font-size: 1.8rem;
+    background-color: var(--cream);
+}
+
+.general-card{
+    width: 342px;
+    margin: 0 auto;
+}
+
+.header{
+    margin-top: 60px;   
+    background-color: var(--softRed);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    border-radius: 12px;
+    color: var(--white);
+}
+.header .header-balance{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header .header-balance span{
+    font-size: 1.4rem;
+    color: var(--veryPaleOrange);
+    margin-bottom: 8px;
+}
+
+main h3{
+    margin-bottom: 16px;
+    color: var(--Brown);
+}
+.general-card main{
+    background-color: var(--white);
+    margin-top: 16px;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+    
+}
+
+.graphic-week{
+    display: flex;
+    justify-content: space-around;
+}
+
+.week-day-100{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+ 
+
+.week-day-100 span{
+    margin-top: 8px;
+    font-size: 1.2rem;
+    color: var(--mediumBrown);
+}
+
+.day-of-week{
+    position: relative;
+    width: 30px;
+    height: 70%;
+    border-radius: 5px;
+    background-color: var(--softRed);
+}
+
+.day-of-week:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+.money-day{
+    display: none;
+    background-color: var(--Brown);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 4px;
+    border-radius: 4px;
+    position: absolute;
+    top: -36px;
+    left: -12px;
+    
+}
+
+
+.footer{
+    background-color:var(--white);
+    padding: 0 20px 20px 20px;
+    border-radius: 0 0 12px 12px;
+}
+
+.footer-border{
+    border-top: 2px solid var(--cream);
+    padding: 24px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--Brown);
+}
+
+.footer-border span{
+
+    font-size: 1.5rem;
+    color: var(--mediumBrown);
+}
+
+.total h2{
+    font-size: 2.8rem;
+}
+
+.porcentaje{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
